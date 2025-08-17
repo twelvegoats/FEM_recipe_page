@@ -43,6 +43,7 @@ li {
   margin-bottom: 0.5rem;
   font-weight: $young-serif-font-weight;
   line-height: 1;
+  color: $stone-900;
 }
 
 .recipe__description {
@@ -101,4 +102,27 @@ li {
   .nutrition {
     padding: 0 1.5rem;
   }
+}
+
+.instructions__list {
+  counter-reset: instruction-counter;
+  list-style: none;
+  padding-left: 0;
+}
+
+.instructions__list-item {
+  counter-increment: instruction-counter;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.instructions__list-item::before {
+  content: counter(instruction-counter) '.';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: $brown-800; // Use your brown color variable
+  font-weight: $font-weight-bold;
+  font-family: $outfit;
 }
