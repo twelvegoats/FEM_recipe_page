@@ -3,3 +3,12 @@
 body {
   background-color: $rose-500;
 }
+
+.recipe {
+  max-width: 23.438rem;
+}
+
+.recipe__image {
+  max-width: 100%;
+  height: auto;
+}
