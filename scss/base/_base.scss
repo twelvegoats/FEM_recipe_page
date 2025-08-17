@@ -67,6 +67,15 @@ li {
   color: $stone-600;
 }
 
+.ingredients__title,
+.instructions__title,
+.nutrition__title {
+  font-family: $young-serif;
+  color: $brown-800;
+  font-weight: $young-serif-font-weight;
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 768px) {
   .recipe {
     max-width: 100%;
