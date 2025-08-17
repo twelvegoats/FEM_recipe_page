@@ -47,11 +47,24 @@ li {
 
 .recipe__description {
   font-size: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
   font-family: $outfit;
   font-weight: $font-weight-regular;
   color: $stone-600;
   line-height: 1.5;
+}
+
+.prep-time {
+  margin-left: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.prep-time__title {
+  color: $rose-800;
+}
+
+.prep-time__item {
+  color: $stone-600;
 }
 
 @media (max-width: 768px) {
