@@ -11,6 +11,10 @@ body {
 
 .recipe {
   max-width: 23.438rem;
+  background-color: $white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  margin: 1rem;
 }
 
 .recipe__image {
