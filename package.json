@@ -6,7 +6,7 @@
   "scripts": {
     "sass": "sass scss/main.scss dist/main.css",
     "sass:watch": "sass --watch scss/main.scss dist/main.css",
-    "sass:build": "sass scss/main.scss dist/main.css --style=compressed",
+    "sass:build": "sass scss/main.scss dist/main.css --style=expanded",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
