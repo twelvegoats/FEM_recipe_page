@@ -29,28 +29,36 @@
     </style>
   </head>
   <body>
-    <main class="recipe">
+    <!-- Skip navigation for keyboard users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <main id="main-content" class="recipe">
       <img
         src="./assets/images/image-omelette.jpeg"
-        alt="Image of an omelette"
+        alt="A golden omelette on a white plate"
         class="recipe__image"
       />
-      <h1 class="recipe__title">Simple Omelette Recipe</h1>
-      <p class="recipe__description">
-        An easy and quick dish, perfect for any meal. This classic omelette
-        combines beaten eggs cooked to perfection, optionally filled with your
-        choice of cheese, vegetables, or meats.
-      </p>
-      <section class="prep-time">
-        <h2 class="prep-time__title">Preparation time</h2>
+      
+      <header class="recipe__header">
+        <h1 class="recipe__title">Simple Omelette Recipe</h1>
+        <p class="recipe__description">
+          An easy and quick dish, perfect for any meal. This classic omelette
+          combines beaten eggs cooked to perfection, optionally filled with your
+          choice of cheese, vegetables, or meats.
+        </p>
+      </header>
+      
+      <section class="prep-time" aria-labelledby="prep-time-heading">
+        <h2 id="prep-time-heading" class="prep-time__title">Preparation time</h2>
         <ul class="prep-time__list">
           <li class="prep-time__item">Total: Approximately 10 minutes</li>
           <li class="prep-time__item">Preparation: 5 minutes</li>
           <li class="prep-time__item">Cooking: 5 minutes</li>
         </ul>
       </section>
-      <section class="ingredients">
-        <h2 class="ingredients__title">Ingredients</h2>
+      
+      <section class="ingredients" aria-labelledby="ingredients-heading">
+        <h2 id="ingredients-heading" class="ingredients__title">Ingredients</h2>
         <ul class="ingredients__list">
           <li class="ingredients__list-item">2-3 large eggs</li>
           <li class="ingredients__list-item">Salt, to taste</li>
@@ -61,8 +69,9 @@
           </li>
         </ul>
       </section>
-      <section class="instructions">
-        <h2 class="instructions__title">Instructions</h2>
+      
+      <section class="instructions" aria-labelledby="instructions-heading">
+        <h2 id="instructions-heading" class="instructions__title">Instructions</h2>
         <ol class="instructions__list">
           <li class="instructions__list-item">
             <strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and
@@ -91,31 +100,32 @@
             <strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.
           </li>
         </ol>
-        <section class="nutrition">
-          <h2 class="nutrition__title">Nutrition</h2>
-          <p class="nutrition__description">
-            The table below shows nutritional values per serving without the
-            additional fillings.
-          </p>
-          <div class="nutrition__list">
-            <div class="nutrition__item">
-              <span class="nutrition__label">Calories</span>
-              <span class="nutrition__value">277kcal</span>
-            </div>
-            <div class="nutrition__item">
-              <span class="nutrition__label">Carbs</span>
-              <span class="nutrition__value">0g</span>
-            </div>
-            <div class="nutrition__item">
-              <span class="nutrition__label">Protein</span>
-              <span class="nutrition__value">20g</span>
-            </div>
-            <div class="nutrition__item">
-              <span class="nutrition__label">Fat</span>
-              <span class="nutrition__value">22g</span>
-            </div>
+      </section>
+      
+      <section class="nutrition" aria-labelledby="nutrition-heading">
+        <h2 id="nutrition-heading" class="nutrition__title">Nutrition</h2>
+        <p class="nutrition__description">
+          The table below shows nutritional values per serving without the
+          additional fillings.
+        </p>
+        <div class="nutrition__list" role="table" aria-label="Nutritional information">
+          <div class="nutrition__item" role="row">
+            <span class="nutrition__label" role="rowheader">Calories</span>
+            <span class="nutrition__value" role="cell">277kcal</span>
           </div>
-        </section>
+          <div class="nutrition__item" role="row">
+            <span class="nutrition__label" role="rowheader">Carbs</span>
+            <span class="nutrition__value" role="cell">0g</span>
+          </div>
+          <div class="nutrition__item" role="row">
+            <span class="nutrition__label" role="rowheader">Protein</span>
+            <span class="nutrition__value" role="cell">20g</span>
+          </div>
+          <div class="nutrition__item" role="row">
+            <span class="nutrition__label" role="rowheader">Fat</span>
+            <span class="nutrition__value" role="cell">22g</span>
+          </div>
+        </div>
       </section>
     </main>
 
