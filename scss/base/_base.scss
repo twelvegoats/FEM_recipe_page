@@ -8,7 +8,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-family: $young-serif;
+  font-family: $outfit;
+  font-size: $body-copy-font-size;
 }
 
 ul,
@@ -22,7 +23,7 @@ li {
 }
 
 .recipe {
-  max-width: 23.438rem;
+  max-width: 35rem;
   background-color: $white;
   padding: 1.5rem;
   border-radius: 0.75rem;
@@ -36,7 +37,18 @@ li {
 }
 
 .recipe__title {
-  font-size: 1.5rem;
+  font-family: $young-serif;
+  font-size: 2.25rem;
   margin-bottom: 0.5rem;
   font-weight: $young-serif-font-weight;
+  line-height: 1;
+}
+
+.recipe__description {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-family: $outfit;
+  font-weight: $font-weight-regular;
+  color: $stone-600;
+  line-height: 1.5;
 }
