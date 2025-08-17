@@ -53,3 +53,29 @@ li {
   color: $stone-600;
   line-height: 1.5;
 }
+
+@media (max-width: 768px) {
+  .recipe {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .recipe__image {
+    margin: 0;
+    border-radius: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .recipe__header {
+    padding: 0 1.5rem;
+  }
+
+  .prep-time,
+  .ingredients,
+  .instructions,
+  .nutrition {
+    padding: 0 1.5rem;
+  }
+}
