@@ -1,0 +1,26 @@
+{
+  "name": "fem_recipe_page",
+  "version": "1.0.0",
+  "description": "![Design preview for the Recipe page coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/main.scss dist/main.css",
+    "sass:watch": "sass --watch scss/main.scss dist/main.css",
+    "sass:build": "sass scss/main.scss dist/main.css --style=compressed",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twelvegoats/FEM_recipe_page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/twelvegoats/FEM_recipe_page/issues"
+  },
+  "homepage": "https://github.com/twelvegoats/FEM_recipe_page#readme",
+  "devDependencies": {
+    "sass": "^1.90.0"
+  }
+}
